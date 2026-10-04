@@ -1,4 +1,4 @@
-# ship-app-ai_eval
+# SHIP APP AI EVAL FRAMEWORK
 
 An evaluation framework for the AI assistant in [ShipTest](https://github.com/QAcart-Premium/ship-app), built with DeepEval and pytest.
 
