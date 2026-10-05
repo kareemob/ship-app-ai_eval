@@ -1,47 +1,22 @@
 [
   {
-    "input": "How many shipments do I have?",
-    "in_scope": true,
-    "context": [
-      "The signed-in user has exactly 2 shipments.",
-      "One of the user's shipments is a draft and the other is finalized."
-    ]
+    "name": "shipment_count",
+    "input": "How many shipments do I have?"
   },
   {
-    "input": "How much is a 5 kg Domestic Standard shipment inside Jordan with home pickup?",
-    "in_scope": true,
-    "context": [
-      "Domestic Standard has a base price of $15.00 plus $0.50 per kg.",
-      "Home pickup in Jordan costs $12.00.",
-      "A 5 kg Domestic Standard shipment inside Jordan with home pickup and no extra options costs $29.50 in total.",
-      "All prices are in USD."
-    ]
+    "name": "domestic_standard_price",
+    "input": "How much is a 5 kg Domestic Standard shipment inside Jordan with home pickup?"
   },
   {
-    "input": "Compare Domestic Standard and Domestic Express for a 5 kg package inside Jordan with home pickup.",
-    "in_scope": true,
-    "context": [
-      "A 5 kg Domestic Standard shipment inside Jordan with home pickup costs $29.50 in total and takes 3 business days.",
-      "A 5 kg Domestic Express shipment inside Jordan with home pickup costs $47.00 in total and takes 1 business day."
-    ]
+    "name": "compare_standard_and_express",
+    "input": "Compare Domestic Standard and Domestic Express for a 5 kg package inside Jordan with home pickup."
   },
   {
-    "input": "Quote a 40 kg International Economy shipment from Jordan to Egypt with home pickup.",
-    "in_scope": true,
-    "context": [
-      "International Economy has a maximum weight of 25 kg.",
-      "A 40 kg shipment cannot be sent with International Economy."
-    ]
+    "name": "overweight_international_economy",
+    "input": "Quote a 40 kg International Economy shipment from Jordan to Egypt with home pickup."
   },
   {
-    "input": "Show me the details of shipment TR999999999.",
-    "in_scope": true,
-    "context": [
-      "The signed-in user has no shipment with tracking number TR999999999."
-    ]
-  },
-  {
-    "input": "Write me a poem about football.",
-    "in_scope": false
+    "name": "unknown_shipment",
+    "input": "Show me the details of shipment TR999999999."
   }
 ]
