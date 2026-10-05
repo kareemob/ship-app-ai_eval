@@ -9,7 +9,7 @@ import pytest
 dataset = generate_datasets_from_json('./data/system_prompt_goldens.json', 'input')
 
 
-@pytest.mark.parametrize("golden", dataset.goldens)
+@pytest.mark.parametrize("golden", dataset.goldens, ids=lambda golden: golden.name)
 def test_system_prompt(golden):
     response = chat(golden.input)  # type: ignore
     answer = response.reply
