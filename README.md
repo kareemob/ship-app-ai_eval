@@ -10,7 +10,7 @@ This README covers setup and running only. What each metric checks is documented
 
 - Python 3.14
 - [uv](https://docs.astral.sh/uv/)
-- A running ShipTest instance with its AI assistant enabled
+- A running [Ship-app](https://github.com/QAcart-Premium/ship-app) instance with its AI assistant enabled
 - An OpenRouter API key for the judge model
 
 Nothing else. The framework has no database and no server of its own.
