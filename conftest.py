@@ -14,8 +14,8 @@ def pytest_runtest_makereport(item, call):
     if data is None:
         return
 
-    golden, answer, chunks = data
+    golden, answer, items = data
     if report.passed:
-        save_report(golden, answer, chunks, "PASSED")
+        save_report(item.originalname, golden, answer, items, "PASSED")
     else:
-        save_report(golden, answer, chunks, "FAILED", str(call.excinfo.value))
+        save_report(item.originalname, golden, answer, items, "FAILED", str(call.excinfo.value))

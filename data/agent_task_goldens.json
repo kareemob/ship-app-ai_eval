@@ -1,0 +1,30 @@
+[
+  {
+    "name": "count_my_shipments",
+    "input": "How many shipments do I have?"
+  },
+  {
+    "name": "shipment_details_by_tracking_number",
+    "input": "Show me the details of shipment TR189960772"
+  },
+  {
+    "name": "price_quote_with_required_options",
+    "input": "What's the total for a 5 kg Domestic Standard shipment from Jordan to Jordan with home pickup, including any required options?"
+  },
+  {
+    "name": "blocked_route_check",
+    "input": "Can I ship from Saudi Arabia to Iraq?"
+  },
+  {
+    "name": "available_services_for_route",
+    "input": "Which services are available for a 20 kg shipment from Jordan to Egypt?"
+  },
+  {
+    "name": "supported_countries",
+    "input": "Which countries do you support, and which of them are Gulf countries?"
+  },
+  {
+    "name": "price_quote_service_not_named",
+    "input": "How much is a 5 kg shipment from Jordan to Egypt with home pickup, including any required options?"
+  }
+]
