@@ -1,8 +1,8 @@
-from deepeval.metrics import GEval, AnswerRelevancyMetric, HallucinationMetric
+from deepeval.metrics import ContextualPrecisionMetric, GEval, FaithfulnessMetric, ContextualRelevancyMetric, ContextualRecallMetric
 from deepeval.test_case import SingleTurnParams
 from support.judge import get_judge
 
-
+# CUSTOM METRICS (LLM)
 def system_prompt_compliance():
     return GEval(
     name="Chat style",
@@ -16,5 +16,31 @@ def system_prompt_compliance():
     ],
     evaluation_params = [SingleTurnParams.INPUT, SingleTurnParams.ACTUAL_OUTPUT],
     threshold = 0.7,
+    model = get_judge()
+)
+
+# Generator metric (RAG)
+def faithfulness():
+    return FaithfulnessMetric(
+    threshold = 0.75,
+    model = get_judge()
+)
+
+# Retriever metrics (RAG)
+def context_relevancy():
+    return ContextualRelevancyMetric(
+    threshold = 0.5,
+    model = get_judge()
+)
+
+def context_recall():
+    return ContextualRecallMetric(
+    threshold = 0.5,
+    model = get_judge()
+)
+
+def context_precision():
+    return ContextualPrecisionMetric(
+    threshold = 0.75,
     model = get_judge()
 )

@@ -6,6 +6,8 @@ load_dotenv()
 BASE_URL = os.getenv('SHIPTEST_BASE_URL')
 SHIPTEST_LOGIN_URL = '/api/auth/login'
 SHIPTEST_CHAT_URL = '/api/agent/chat'
+SHIPTEST_ASK_URL = '/api/assistant/ask'
+SHIPTEST_SEARCH_URL = '/api/assistant/search'
 
 SHIPTEST_EMAIL = 'jor@qacart.com'
 SHIPTEST_PASSWORD = 'Test@1234'
