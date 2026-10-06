@@ -1,0 +1,67 @@
+[
+  {
+    "name": "gulf_to_iraq_blocked",
+    "input": "Can I ship from Saudi Arabia to Iraq?",
+    "expected_output": "No. Shipments from Gulf countries to Iraq are blocked, and Saudi Arabia is a Gulf country."
+  },
+  {
+    "name": "iraq_to_gulf_allowed",
+    "input": "Can I ship from Iraq to Saudi Arabia?",
+    "expected_output": "Yes. Shipping from Iraq to Saudi Arabia is allowed. Only shipments from Gulf countries to Iraq are blocked."
+  },
+  {
+    "name": "non_gulf_to_iraq_allowed",
+    "input": "Can I ship from Jordan to Iraq?",
+    "expected_output": "Yes. Shipping from Jordan to Iraq is allowed. Shipments from non-Gulf countries to Iraq are allowed."
+  },
+  {
+    "name": "signature_mandatory_egypt",
+    "input": "Is a signature required when shipping to Egypt?",
+    "expected_output": "Yes. A signature is mandatory for shipments to Egypt. It is selected automatically and the user cannot uncheck it. A $5.00 signature fee is added."
+  },
+  {
+    "name": "home_pickup_over_17kg",
+    "input": "Can I use home pickup for an 18 kg package sent from Saudi Arabia?",
+    "expected_output": "No. Home pickup is disabled for packages over 17 kg. The postal office is selected instead."
+  },
+  {
+    "name": "home_pickup_iraq_exception",
+    "input": "Can I use home pickup for an 18 kg package sent from Iraq?",
+    "expected_output": "Yes. Home pickup is available for senders in Iraq regardless of weight. The 17 kg limit does not apply to Iraq."
+  },
+  {
+    "name": "international_max_weight",
+    "input": "What is the maximum weight for an International shipment?",
+    "expected_output": "The maximum weight for an International shipment is 25 kg."
+  },
+  {
+    "name": "item_description_required",
+    "input": "When is an item description required?",
+    "expected_output": "An item description is required when the sender is in a non-Gulf country and the receiver is in a Gulf country. It must be at least 5 characters."
+  },
+  {
+    "name": "street_required_gulf",
+    "input": "Is the street address required for a receiver in Saudi Arabia?",
+    "expected_output": "Yes. The street address is required for receivers in Gulf countries, and Saudi Arabia is a Gulf country."
+  },
+  {
+    "name": "home_pickup_fee_jordan",
+    "input": "How much is the home pickup fee for a sender in Jordan?",
+    "expected_output": "The home pickup fee for a sender in Jordan is $12.00."
+  },
+  {
+    "name": "not_in_documentation",
+    "input": "What are the customs duties for shipping to Egypt?",
+    "expected_output": "The customs duties for shipping to Egypt are not specified in the documentation."
+  },
+  {
+    "name": "why_rule_exists",
+    "input": "Why is shipping from Gulf countries to Iraq blocked?",
+    "expected_output": "Shipments from Gulf countries to Iraq are blocked so that blocked shipping routes are enforced."
+  },
+  {
+    "name": "inconsistent_docs_shipment_type",
+    "input": "What shipment type is a shipment from Egypt to Saudi Arabia?",
+    "expected_output": "A shipment from Egypt to Saudi Arabia is International. Shipments from a non-Gulf country to a Gulf country are International."
+  }
+]
