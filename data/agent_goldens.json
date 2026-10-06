@@ -1,0 +1,80 @@
+[
+  {
+    "name": "count_my_shipments",
+    "input": "How many shipments do I have?",
+    "expected_tools": [
+      { "name": "search_shipments" }
+    ]
+  },
+  {
+    "name": "shipment_details_by_tracking_number",
+    "input": "Show me the details of shipment TR189960772",
+    "expected_tools": [
+      { "name": "get_shipment" }
+    ]
+  },
+  {
+    "name": "price_quote_with_required_options",
+    "input": "What's the total for a 5 kg Domestic Standard shipment from Jordan to Jordan with home pickup, including any required options?",
+    "expected_tools": [
+      { "name": "check_rules" },
+      { "name": "quote_price" }
+    ]
+  },
+  {
+    "name": "blocked_route_check",
+    "input": "Can I ship from Saudi Arabia to Iraq?",
+    "expected_tools": [
+      { "name": "check_rules" },
+      { "name": "search_policy_docs" }
+    ]
+  },
+  {
+    "name": "available_services_for_route",
+    "input": "Which services are available for a 20 kg shipment from Jordan to Egypt?",
+    "expected_tools": [
+      { "name": "list_services" }
+    ]
+  },
+  {
+    "name": "policy_explanation",
+    "input": "Why is a signature mandatory for shipments to Egypt?",
+    "expected_tools": [
+      { "name": "search_policy_docs" }
+    ]
+  },
+  {
+    "name": "supported_countries",
+    "input": "Which countries do you support, and which of them are Gulf countries?",
+    "expected_tools": [
+      { "name": "list_countries" }
+    ]
+  },
+  {
+    "name": "unknown_shipment",
+    "input": "Show me the details of shipment TR999999999",
+    "expected_tools": [
+      { "name": "get_shipment" }
+    ]
+  },
+  {
+    "name": "price_quote_service_not_named",
+    "input": "How much is a 5 kg shipment from Jordan to Egypt with home pickup, including any required options?",
+    "expected_tools": [
+      { "name": "list_services" },
+      { "name": "quote_price" }
+    ]
+  },
+{
+    "name": "save_draft_shipment",
+    "input": "Save a draft shipment: 3 kg, 30 x 20 x 10 cm, from me to Kareem Obaidat, phone 0791112223, Al Jaish Street, Zarqa, Jordan, postal code 13110, Domestic Standard with home pickup and signature required.",
+    "expected_tools": [
+        { "name": "create_draft_shipment" }
+    ]
+},
+  {
+    "name": "greeting_needs_no_tool",
+    "input": "Hi",
+    "expected_tools": []
+  }
+]
