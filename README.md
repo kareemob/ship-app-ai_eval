@@ -1,6 +1,6 @@
 # SHIP APP AI EVAL FRAMEWORK
 
-An evaluation framework for the AI assistant in [ShipTest](https://github.com/QAcart-Premium/ship-app), built with DeepEval and pytest.
+An evaluation framework for the AI assistant in [Ship-app from QACart](https://github.com/QAcart-Premium/ship-app), built with DeepEval and pytest.
 
 It talks to a running ShipTest instance over HTTP, sends it questions from a golden dataset, and scores the replies with an LLM judge.
 
